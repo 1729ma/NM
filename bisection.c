@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 // Function to evaluate the given equation
@@ -7,10 +6,12 @@ double f(double x) {
 }
 
 // Function to implement the Bisection Method
-void f2(double a, double b, int maxit) {
-    double x;
+void f2(double a, double b, int maxit,double x) {
+    
     int i = 1;
-
+    
+printf("Enter the maximum number of iterations: ");
+    scanf("%d", &maxit);
     // Taking valid root interval from user
     do {
         printf("Enter values for a and b: ");
@@ -45,15 +46,14 @@ void f2(double a, double b, int maxit) {
 }
 
 int main() {
-    double a, b;
+    double a, b,x;
     int maxit;
 
     // User input for maximum iterations
-    printf("Enter the maximum number of iterations: ");
-    scanf("%d", &maxit);
+    
 
     // Call the bisection method function
-    f2(a, b, maxit);
+    f2(a, b, maxit,x);
 
     return 0;
 }
