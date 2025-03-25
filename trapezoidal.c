@@ -4,7 +4,7 @@ double findValueAt(double x)
 {
     return 1/(1+x*x);
 }
-void f
+
 int main()
 {
     int n;
